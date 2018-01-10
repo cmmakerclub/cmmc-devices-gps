@@ -3,6 +3,7 @@ import * as firebase from 'firebase'
 import uuid from 'uuid'
 import _ from 'underscore'
 import moment from 'moment-timezone'
+import Map from './Map.js'
 
 moment.locale('th')
 
@@ -100,6 +101,9 @@ export default class App extends Component {
                     <i className='fa fa-clock-o'/>&nbsp;
                     Last updated : {moment(d.updated_at).fromNow()}
                     </span>
+                </div>
+                <div className="form-group">
+                  <Map latitude={d.latitude} longitude={d.longitude}/>
                 </div>
                 <div className="form-group">
                   <button type='button' className='btn btn-success float-right'
