@@ -21,7 +21,7 @@ export class MapContainer extends Component {
           lng: this.state.longitude
         }}
         // centerAroundCurrentLocation={true}
-      >
+        >
         <Marker
           title={'The marker`s title will appear as a tooltip.'}
           name={'SOMA'}
